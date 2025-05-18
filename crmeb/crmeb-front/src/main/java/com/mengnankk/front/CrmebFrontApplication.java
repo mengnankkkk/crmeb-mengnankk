@@ -1,4 +1,4 @@
-package com.zbkj.front;
+package com.mengnankk.front;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -27,8 +27,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableTransactionManagement
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class) //去掉数据源
-@ComponentScan(basePackages = {"com.zbkj", "com.zbkj.front"})
-@MapperScan(basePackages = {"com.zbkj.**.dao"})
+@ComponentScan(basePackages = {"com.mengnankk", "com.mengnankk.front"})
+@MapperScan(basePackages = {"com.mengnankk.**.dao"})
 public class CrmebFrontApplication {
     public static void main(String[] args) {
         SpringApplication.run(CrmebFrontApplication.class, args);
